@@ -50,36 +50,59 @@ function expect(target) {
 //
 // Only add code to *THIS* section!
 
-function dog(obj) {
+
+
+
+
+// class dog{
+//   constructor(obj){
+//     this.status = "normal"
+//   if (obj) {
+//     this.color = obj.color
+//   }
+//   if (obj && obj.hasOwnProperty("hungry")) {
+//     this.hungry = obj.hungry
+//   } else {
+//     this.hungry = true
+//   }
+//   }
+// }
+
+
+
+function Dog(obj) {
   this.status = "normal"
   if (obj) {
     this.color = obj.color
-  }
+  
   if (obj && obj.hasOwnProperty("hungry")) {
     this.hungry = obj.hungry
   } else {
     this.hungry = true
+   } 
   }
 }
 
-dog.prototype()
+Dog.prototype()
 
-function human(obj) {
+function Human(obj) {
+  function(dog)
   this.cool = "true"
   if (obj && obj.hasOwnProperty("cool")) {
     this.cool = obj.cool
   } else {
     this.cool = false
   }
+
 }
 
-human.prototype.pet = function(dog) {
-  dog.status = "happy"
+Human.prototype.pet = function (dog) {
+  dog.status = 'happy'
 }
-human.prototype.feed = function(dog) {
+Human.prototype.feed = function(dog) {
   dog.hungry = false
 }
-var sadie = new dog()
+var sadie = new Dog()
 this.owner = mason
 // ????????
 // ????????
